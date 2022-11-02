@@ -1,0 +1,651 @@
+html,body {
+    margin:0 auto;
+
+    padding:0;
+    background-color: rgb(25, 25, 25);
+    color: white;
+    font-family: 'Inter', sans-serif;
+}
+.container{
+    max-width: 1048px;
+    margin: 0 auto;
+}
+.button:hover{
+    background: #b0823e;
+    cursor: pointer;
+}
+.text_hover:hover{
+    color: #b0823e;
+}
+
+.header{
+    position: fixed;  
+    top: 0;  
+    background:#b0823e;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+
+}
+.header_logo{
+    padding: 0;
+    margin-left: 150px;
+    cursor: pointer;
+    user-select: none;
+    
+}
+.header_settings{
+    margin-right: 150px;
+    cursor: pointer;
+    user-select: none;
+
+}
+.main{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;   
+}
+.main_list{
+    
+    width: 25%;
+    margin:0;
+    padding:0;
+    user-select: none;
+}
+.list_item{
+    font-size: 14px;
+    height: 20px;
+    text-align: left;
+    margin: 10px 10px;
+    padding: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    text-align: left;
+}
+.main_page{
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+}
+.img_big{
+    margin: 10px 25px;
+    height: 200px;
+    width: 200px;
+    border-radius: 1%
+}
+.img_small{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.leftside{
+    height: 720px;
+    width: 30%;
+    margin: 10px;
+}
+.actions{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    margin-bottom: 10px;
+}
+.action{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    border-radius: 5px;
+    padding: 3px;
+    margin: 5px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+
+.friends_main{
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    height: 210px;
+    width: 250px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+
+}
+.friends_amount{
+    border-radius: 10px;
+    width: max-content;
+    height: 20px;
+    margin: 7px;
+    margin-left: 20px;
+    cursor: pointer;
+    padding: 5px;
+}
+.friends{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100px;
+
+}
+.friend{
+    font-size: 12px;
+    width: 50px;
+    height: 50px;
+    margin: 12px;
+    padding: 1px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.name{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.friends_online_main{
+    font-size: 14px;
+    margin-top: 5px;
+    height: 210px;
+    width: 250px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+
+}
+
+.friends_online{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 100px;
+    width: 250px;
+}
+
+.rightside{
+    margin-left: 20px;
+    width:70%;
+ }
+ .nameofpage{
+    text-transform: capitalize;
+    font-size: 25px;
+}
+.status{
+    font-size: 12px;
+    cursor: pointer;
+}
+.online_status{
+    font-size: 14px;
+}
+.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding: 10px;
+}
+.info{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+.inf{
+    
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+}
+.inf1{
+    
+    width: 270px;
+    margin-right: 20px;
+}
+.inf3{
+    font-size: 12px;
+    text-align: center;
+    cursor: pointer;
+}
+.photos_main{
+    margin-top: 10px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+.photos_amount{
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+}
+.photos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 130px;
+    width: 555px;
+}
+.photo{
+    margin: 2px;
+    padding: 0px;
+    height: 115px;
+    width: 115px;
+    background-color: grey;
+}
+
+.records_main{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 555px;
+    border: 1px solid rgb(59, 59, 59);
+    background-color: rgb(47, 47, 47);
+    border-radius: 10px;
+}
+.records_amount{
+    display: flex;
+}
+
+.record_amount{
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    margin: 7px;
+    padding: 7px;
+    user-select: none;
+    border-radius: 10px;
+
+}
+
+.search{
+    font-size: 14px;
+    display: flex;
+    margin: 7px;
+    margin-left: 140px;
+    padding: 7px;
+    user-select: none;
+    border-radius: 10px;
+}
+.record{
+    display: flex;
+    justify-content: space-between;
+}
+.record_left{
+    margin: 15px;
+    width: 10%;
+    
+}
+.record_right{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    
+}
+.record_name{
+    padding: 5px;
+    
+}
+.record_post{
+    height: 215px;
+    width: 440px;
+    margin: 7px;
+    background-color: grey;
+}
+
+
+
+@media (max-width: 992px){
+    .main_page{
+        display: flex;
+        flex-direction:row;
+        width: 100%;
+        margin-left: 10px;
+    }
+    .ava{
+        height: 210px;
+    }
+    .main_list{
+        width: 12%;
+
+    }
+    .list_item{
+        font-size: 9px;
+        height: 10px;
+        margin: 4px;
+        margin-bottom: 5px;
+    }
+    .all_friends{
+        display: flex;
+        flex-direction:row;
+        height: 170px;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .friends_main{
+        margin: 0;
+        height: 180px;
+        width: 100%;
+
+        margin-right: 5px;
+    }
+    .friends{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100px;
+        width: 75px;
+    }
+    .friends_amount{
+        padding: 3px;
+        padding-right: 0;
+        margin: 1px;
+        margin-bottom: 10px;
+        width: 93%;
+        font-size: 10px;
+    }
+    .img_small{
+        width: 30px;
+        height: 30px;
+    }
+    .friend{
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 8px;
+    }
+    .friends_online_main{
+        margin: 0;
+        height: 180px;
+        width: 100%;
+
+    }
+    .friends_online{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 70px;
+        height: 130px;
+    }
+
+    .leftside{
+        width: 150px;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction:column;
+        margin: 5px;
+        margin-right: 10px;
+        margin-top: 100px;
+        margin-right: 20px;
+    }
+    .img_big{
+        width: 150px;
+        height: 150px;
+        margin: 0;
+    }
+    
+    .actions{
+        margin: 0;
+        width: 100%;
+    }
+    .action{
+        width: 100%;
+        font-size: 9px;
+        
+    }
+    .header_logo{
+        margin-left: 3%;
+    }
+    .header_settings{
+        margin-right: 5%;
+    }
+    .rightside{
+        margin-left: 0;
+        width: 100%;
+    }
+    .nameofpage{
+        font-size: 24px;
+    }
+    .status{
+        font-size: 10px;
+    }
+    .online_status{
+        font-size: 14px;
+    }
+    .inf{
+        font-size: 10px;
+    }
+    .inf1{
+        width: 120px;
+    }
+    .inf2{
+        width: 80px;
+    }
+    .inf3{
+        font-size: 12px;
+    }
+    .photos{
+        
+        width: 100%;
+        height: 110px;
+    }
+    .photos_amount{
+        font-size: 12px;
+    }
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
+    .records_main{
+        width: 100%;
+    }
+    .record_amount{
+        font-size: 12px;
+        width: 25%;
+        text-align: center;
+    }
+    .search{
+        font-size: 12px;
+        margin: 0;
+        width: 25%;
+        align-items: center;
+    }
+    .record_left{
+        margin: 5px;
+    }
+    .record_name{
+        font-size: 12px;
+    }
+    .record_post{
+        width: 95%;
+    }
+}
+
+
+
+
+@media (max-width: 576px){
+    .main_page{
+        display: flex;
+        flex-direction:column;
+        width: 87%;
+    }
+    .ava{
+        height: 170px;
+    }
+    .main_list{
+        width: 23%;
+        margin-top: 10px;
+    }
+    .list_item{
+        font-size: 9px;
+        height: 10px;
+        margin: 4px;
+        margin-bottom: 5px;
+    }
+    .all_friends{
+        display: flex;
+        flex-direction:row;
+        height: 170px;
+        width: 100%;
+        
+    }
+    .friends_main{
+        margin: 0;
+        height: 170px;
+        width: 42%;
+        margin-left: 10px;
+        margin-right: 5px;
+        
+    }
+    .friends{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 100px;
+        margin-left: 2px;
+        width: 100%;
+    }
+    .friends_amount{
+        padding: 3px;
+        padding-right: 0;
+        margin: 1px;
+        width: 93%;
+        font-size: 10px;
+    }
+    .img_small{
+        width: 30px;
+        height: 30px;
+    }
+    .friend{
+        padding: 0;
+        width: 35px;
+        height: 35px;
+        margin: 0px;
+        margin-bottom: 8px;
+        font-size: 8px;
+    }
+    .friends_online_main{
+        margin: 0;
+        height: 170px;
+        width: 42%;
+
+    }
+    .friends_online{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 130px;
+    }
+
+    .leftside{
+        width: 99%;
+        height: 180px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction:row;
+        margin: 5px;
+        margin-right: 0;
+        margin-top: 10px;
+    }
+    .img_big{
+        width: 100px;
+        height: 100px;
+        margin: 0;
+    }
+    
+    .actions{
+        margin: 0;
+        width: 100px;
+    }
+    .action{
+        width: 100%;
+        font-size: 9px;
+        
+    }
+    .header_settings{
+        margin: 0px;
+    }
+    .rightside{
+        margin-left: 0;
+        width: 99%;
+    }
+    .nameofpage{
+        font-size: 18px;
+    }
+    .status{
+        font-size: 9px;
+    }
+    .online_status{
+        font-size: 12px;
+    }
+    .inf{
+        font-size: 10px;
+    }
+    .inf1{
+        width: 120px;
+    }
+    .inf2{
+        width: 80px;
+    }
+    .inf3{
+        font-size: 10px;
+    }
+    .photos{
+        
+        width: 280px;
+        height: 90px;
+    }
+    .photos_amount{
+        font-size: 10px;
+    }
+    .photo{
+        width: 80px;
+        height: 80px;
+    }
+    .records_main{
+        width: 100%;
+    }
+    .record_amount{
+        font-size: 10px;
+        width: 25%;
+        text-align: center;
+    }
+    .search{
+        font-size: 10px;
+        margin: 0;
+        width: 25%;
+        align-items: center;
+    }
+    .record_left{
+        margin: 5px;
+    }
+    .record_name{
+        font-size: 10px;
+    }
+    .record_post{
+        width: 95%;
+    }
+}
+
