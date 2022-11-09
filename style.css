@@ -11,32 +11,30 @@ html,body {
     margin: 0 auto;
 }
 .button:hover{
-    background: #b0823e;
+    background: #942a2a;
     cursor: pointer;
 }
 .text_hover:hover{
-    color: #b0823e;
+    color: #942a2a;
 }
 
 .header{
     position: fixed;  
     top: 0;  
-    background:#b0823e;
+    background:#942a2a;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    height: 50px;
-
 }
 .header_logo{
     padding: 0;
-    margin-left: 150px;
+    margin-left: 10%;
     cursor: pointer;
     user-select: none;
     
 }
 .header_settings{
-    margin-right: 150px;
+    margin-right: 10%;
     cursor: pointer;
     user-select: none;
 
@@ -47,7 +45,6 @@ html,body {
     margin-top: 60px;   
 }
 .main_list{
-    
     width: 25%;
     margin:0;
     padding:0;
@@ -64,6 +61,65 @@ html,body {
     border-radius: 10px;
     text-align: left;
 }
+
+.hidden_menu{
+    top: 54px;
+    display: none;
+    position: fixed;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
+    width: 150px;
+    background-color: rgb(59, 59, 59);
+    height: 100%;
+    left: -200px;
+    transition: left .2s;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+.hidden_menu_item{
+    padding: 5px;
+    border-radius: 10px;
+}
+.hidden_menu_b{
+    display: none;
+}
+    
+    .btn_menu{
+        display: none;
+        color: #fff;
+        background-color: rgb(59, 59, 59);
+        padding: 5px;
+        position: fixed;
+        top: 60px;
+        left: 5px;
+        cursor: pointer;
+        transition: left .23s;
+        width: 30px;
+        height: 35px;
+    }
+
+    
+    .btn_menu{
+        margin-top: 0;
+    }
+    
+    .hidden_menu_b:checked ~ .btn_menu{
+        left: 160px;
+    }
+    
+    .hidden_menu_b:checked ~ .hidden_menu{
+        left: 0;
+    }
+    .btn_menu span{
+        display: block;
+        height: 5px;
+        background-color: #fff;
+        margin: 5px 0 0;
+        transition: all .1s linear .2s;
+        position: relative;
+        }
 .main_page{
     width: 850px;
     display: flex;
@@ -88,7 +144,6 @@ ul{
     list-style: none;
 }
 .leftside{
-    height: 720px;
     width: 30%;
     margin: 10px;
 }
@@ -117,17 +172,17 @@ ul{
     font-size: 14px;
     margin-top: 5px;
     margin-bottom: 10px;
-    height: 210px;
-    width: 250px;
+    
     border: 1px solid rgb(59, 59, 59);
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
 
 }
 .friends_amount{
+    display: flex;
     border-radius: 10px;
     width: max-content;
-    height: 20px;
+    
     margin: 7px;
     margin-left: 20px;
     cursor: pointer;
@@ -137,13 +192,12 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 100px;
-
 }
 .friend{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: 12px;
-    width: 50px;
-    height: 50px;
     margin: 12px;
     padding: 1px;
     cursor: pointer;
@@ -158,8 +212,6 @@ ul{
 .friends_online_main{
     font-size: 14px;
     margin-top: 5px;
-    height: 210px;
-    width: 250px;
     border: 1px solid rgb(59, 59, 59);
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
@@ -170,8 +222,6 @@ ul{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 100px;
-    width: 250px;
 }
 
 .rightside{
@@ -215,8 +265,6 @@ ul{
     height: 30px;
 }
 .inf1{
-    
-    width: 270px;
     margin-right: 20px;
 }
 .inf3{
@@ -239,8 +287,7 @@ ul{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 130px;
-    width: 555px;
+    margin-bottom: 10px;
 }
 .photo{
     margin: 2px;
@@ -254,34 +301,33 @@ ul{
     font-size: 14px;
     margin-top: 10px;
     margin-bottom: 10px;
-    width: 555px;
+
     border: 1px solid rgb(59, 59, 59);
     background-color: rgb(47, 47, 47);
     border-radius: 10px;
 }
 .records_amount{
     display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .record_amount{
     font-size: 14px;
-    display: flex;
-    justify-content: space-around;
     margin: 7px;
     padding: 7px;
     user-select: none;
     border-radius: 10px;
-
+    width: 25%;
 }
 
 .search{
     font-size: 14px;
-    display: flex;
     margin: 7px;
-    margin-left: 140px;
     padding: 7px;
     user-select: none;
     border-radius: 10px;
+    width: 25%;
 }
 .record{
     display: flex;
@@ -316,87 +362,66 @@ ul{
     .main_page{
         display: flex;
         flex-direction:row;
-        width: 100%;
-        margin-left: 10px;
-    }
-    .ava{
-        height: 210px;
     }
     .main_list{
-        width: 12%;
-
+        width: 10%;
     }
     .list_item{
-        font-size: 9px;
-        height: 10px;
-        margin: 4px;
-        margin-bottom: 5px;
+        display: none;
     }
+    .hidden_menu{
+        display: block;
+    }
+    .btn_menu{
+        display: block;
+    }
+    .ava{
+        display: flex;
+        justify-content: center;
+    }
+    
+    
     .all_friends{
         display: flex;
         flex-direction:row;
-        height: 170px;
-        width: 100%;
         margin-top: 10px;
     }
     .friends_main{
         margin: 0;
-        height: 180px;
-        width: 100%;
-
         margin-right: 5px;
     }
     .friends{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        height: 100px;
-        width: 75px;
     }
     .friends_amount{
         padding: 3px;
         padding-right: 0;
         margin: 1px;
         margin-bottom: 10px;
-        width: 93%;
-        font-size: 10px;
-    }
-    .img_small{
-        width: 30px;
-        height: 30px;
+        font-size: 12px;
     }
     .friend{
         padding: 0;
-        width: 35px;
-        height: 35px;
         margin: 0px;
         margin-bottom: 8px;
-        font-size: 8px;
+        font-size: 10px;
     }
     .friends_online_main{
         margin: 0;
-        height: 180px;
-        width: 100%;
-
     }
     .friends_online{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 70px;
-        height: 130px;
     }
 
     .leftside{
-        width: 150px;
-        height: 180px;
         display: flex;
-        justify-content: space-around;
         flex-direction:column;
         margin: 5px;
         margin-right: 10px;
-        margin-top: 100px;
-        margin-right: 20px;
     }
     .img_big{
         width: 150px;
@@ -410,7 +435,7 @@ ul{
     }
     .action{
         width: 100%;
-        font-size: 9px;
+        font-size: 12px;
         
     }
     .header_logo{
@@ -421,13 +446,13 @@ ul{
     }
     .rightside{
         margin-left: 0;
-        width: 100%;
+        width: 67%;
     }
     .nameofpage{
         font-size: 24px;
     }
     .status{
-        font-size: 10px;
+        font-size: 14px;
     }
     .online_status{
         font-size: 14px;
@@ -442,12 +467,7 @@ ul{
         width: 80px;
     }
     .inf3{
-        font-size: 12px;
-    }
-    .photos{
-        
-        width: 100%;
-        height: 110px;
+        font-size: 14px;
     }
     .photos_amount{
         font-size: 12px;
@@ -456,19 +476,12 @@ ul{
         width: 100px;
         height: 100px;
     }
-    .records_main{
-        width: 100%;
-    }
     .record_amount{
         font-size: 12px;
-        width: 25%;
-        text-align: center;
+
     }
     .search{
         font-size: 12px;
-        margin: 0;
-        width: 25%;
-        align-items: center;
     }
     .record_left{
         margin: 5px;
@@ -488,109 +501,85 @@ ul{
     .main_page{
         display: flex;
         flex-direction:column;
-        width: 87%;
+        width: 100%;
     }
-    .ava{
-        height: 170px;
-    }
-    .main_list{
-        width: 23%;
-        margin-top: 10px;
-    }
-    .list_item{
-        font-size: 9px;
-        height: 10px;
-        margin: 4px;
-        margin-bottom: 5px;
-    }
+    
     .all_friends{
         display: flex;
         flex-direction:row;
-        height: 170px;
-        width: 100%;
-        
+        margin: 0;      
     }
     .friends_main{
         margin: 0;
-        height: 170px;
-        width: 42%;
         margin-left: 10px;
         margin-right: 5px;
-        
+    }
+    .ava_actions{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .all_friends{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .friends_main{
+        width: 97%;
+        margin: 0;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
     .friends{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-around;
-        height: 100px;
+        justify-content: space-evenly;
         margin-left: 2px;
-        width: 100%;
     }
     .friends_amount{
         padding: 3px;
         padding-right: 0;
-        margin: 1px;
-        width: 93%;
+        font-size: 12px;
+    }
+
+    .friend{
+        margin-bottom: 8px;
         font-size: 10px;
     }
-    .img_small{
-        width: 30px;
-        height: 30px;
-    }
-    .friend{
-        padding: 0;
-        width: 35px;
-        height: 35px;
-        margin: 0px;
-        margin-bottom: 8px;
-        font-size: 8px;
-    }
     .friends_online_main{
-        margin: 0;
-        height: 170px;
-        width: 42%;
-
+        width: 97%;
     }
     .friends_online{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        width: 100%;
-        height: 130px;
     }
 
     .leftside{
-        width: 99%;
-        height: 180px;
+        margin-left: 0;
+        width: 100%;
         display: flex;
         justify-content: space-around;
-        flex-direction:row;
-        margin: 5px;
-        margin-right: 0;
-        margin-top: 10px;
+        flex-direction:column;
     }
-    .img_big{
-        width: 100px;
-        height: 100px;
-        margin: 0;
-    }
-    
     .actions{
-        margin: 0;
-        width: 100px;
+        width: 90%;
+        
     }
     .action{
-        width: 100%;
-        font-size: 9px;
-        
+        font-size: 12px;
+        text-align: center;
+        width: 90%;
+
     }
     .header_settings{
         margin: 0px;
     }
     .rightside{
+        width: 97.5%;
         margin-left: 0;
-        width: 99%;
     }
+
     .nameofpage{
         font-size: 18px;
     }
@@ -603,49 +592,32 @@ ul{
     .inf{
         font-size: 10px;
     }
-    .inf1{
-        width: 120px;
-    }
-    .inf2{
-        width: 80px;
-    }
     .inf3{
         font-size: 10px;
-    }
-    .photos{
-        
-        width: 280px;
-        height: 90px;
     }
     .photos_amount{
         font-size: 10px;
     }
     .photo{
-        width: 80px;
-        height: 80px;
+        width: 75px;
+        height: 75px;
     }
-    .records_main{
-        width: 100%;
+    .records_amount{
+        align-items: center;
     }
     .record_amount{
         font-size: 10px;
-        width: 25%;
         text-align: center;
     }
     .search{
         font-size: 10px;
-        margin: 0;
-        width: 25%;
-        align-items: center;
     }
     .record_left{
+        width: 30%;
         margin: 5px;
     }
     .record_name{
         font-size: 10px;
-    }
-    .record_post{
-        width: 95%;
     }
 }
 
