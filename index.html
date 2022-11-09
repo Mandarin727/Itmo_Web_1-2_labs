@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    
     <title>Локал</title>
 </head>
 <body>
@@ -24,7 +25,7 @@
     <main class="main container">
         <div class="main_list">
             <ul class="list_items">
-                <li class="list_item button"> Профиль</li> 
+                <li class="list_item button">Профиль</li> 
                 <li class="list_item button">Новости</li>
                 <li class="list_item button">Сообщения</li>
                 <li class="list_item button">Друзья</li>
@@ -33,11 +34,28 @@
                 <li class="list_item button">Музыка</li>
                 <li class="list_item button">Видео</li>
             </ul>
+            <input type="checkbox" id="hmt" class="hidden_menu_b">
+                <label class="btn_menu" for="hmt">
+                <span class="first"></span>
+                <span class="second"></span>
+                <span class="third"></span>
+            </label>
+            <ul class="hidden_menu">
+                <li class="hidden_menu_item button">Профиль</li> 
+                <li class="hidden_menu_item button">Сообщения</li>
+                <li class="hidden_menu_item button">Друзья</li>
+                <li class="hidden_menu_item button">Сообщества</li>
+                <li class="hidden_menu_item button">Фотографии</li>
+                <li class="hidden_menu_item button">Музыка</li>
+                <li class="hidden_menu_item button">Видео</li>
+            </ul>
         </div>
         <div class="main_page">
             <section class="leftside">
-                <div class = "ava">
-                    <img class = "img_big" src="img\Max.jpg" alt="">                
+                <div class="ava_actions">
+                    <div class = "ava">
+                        <img class = "img_big" src="img\Max.jpg" alt="">
+                    </div>                
                     <div class="actions">
                         <div class="action button">Написать сообщение</div>
                         <div class="action button">Добавить в друзья</div>
